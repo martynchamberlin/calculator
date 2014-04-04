@@ -163,6 +163,51 @@ namespace WindowsFormsApplication1
             }
         }
 
+        public String[] months()
+        {
+            String[] days = new String[12];
+            for (int i = 1; i <= 12; i++)
+            {
+                days[i - 1] = i < 10 ? "0" + Convert.ToString(i) : Convert.ToString(i);
+            }
+            return days;
+        }
+
+        public String[] years()
+        {
+            return months();
+        }
+
+        public String[] days()
+        {
+            String[] days = new String[31];
+            for ( int i = 1; i <= 31; i++)
+            {
+                days[i - 1] = i < 10 ? "0" + Convert.ToString(i) : Convert.ToString(i);
+            }
+            return days;
+        }
+
+        public String[] hours()
+        {
+            String[] hours = new String[12];
+            for (int i = 1; i <= 12; i++)
+            {
+                hours[i - 1] = Convert.ToString(i);
+                }
+            return hours;
+        }
+
+        public String[] minutes()
+        {
+            String[] minutes = new String[60];
+            for (int i = 0; i <= 59; i++)
+            {
+                minutes[i] = i < 10 ? "0" + Convert.ToString(i) : Convert.ToString(i);
+            }
+            return minutes;
+        }
+
 
     }
 }

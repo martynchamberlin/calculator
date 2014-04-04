@@ -55,40 +55,40 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.button20 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.startHourSelect = new System.Windows.Forms.ComboBox();
-            this.startMinuteSelect = new System.Windows.Forms.ComboBox();
-            this.startTime = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button21 = new System.Windows.Forms.Button();
+            this.finishYear = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.finishHour = new System.Windows.Forms.ComboBox();
+            this.finishMinute = new System.Windows.Forms.ComboBox();
+            this.finishTime = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
+            this.finishDay = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button21 = new System.Windows.Forms.Button();
+            this.finishMonth = new System.Windows.Forms.ComboBox();
+            this.startYear = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.startHour = new System.Windows.Forms.ComboBox();
+            this.startMinute = new System.Windows.Forms.ComboBox();
+            this.startTime = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.startDay = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.startMonth = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button20 = new System.Windows.Forms.Button();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -489,34 +489,347 @@
             // 
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.button21);
-            this.groupBox2.Controls.Add(this.comboBox6);
+            this.groupBox2.Controls.Add(this.finishYear);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.comboBox7);
-            this.groupBox2.Controls.Add(this.comboBox8);
-            this.groupBox2.Controls.Add(this.comboBox9);
+            this.groupBox2.Controls.Add(this.finishHour);
+            this.groupBox2.Controls.Add(this.finishMinute);
+            this.groupBox2.Controls.Add(this.finishTime);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.comboBox10);
+            this.groupBox2.Controls.Add(this.finishDay);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.comboBox11);
-            this.groupBox2.Controls.Add(this.comboBox5);
+            this.groupBox2.Controls.Add(this.finishMonth);
+            this.groupBox2.Controls.Add(this.startYear);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.startHourSelect);
-            this.groupBox2.Controls.Add(this.startMinuteSelect);
+            this.groupBox2.Controls.Add(this.startHour);
+            this.groupBox2.Controls.Add(this.startMinute);
             this.groupBox2.Controls.Add(this.startTime);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.comboBox4);
+            this.groupBox2.Controls.Add(this.startDay);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.comboBox3);
+            this.groupBox2.Controls.Add(this.startMonth);
             this.groupBox2.Location = new System.Drawing.Point(20, 424);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(538, 425);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Units && Measures";
+            this.groupBox2.Text = "Dates && Times";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(246, 343);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(266, 44);
+            this.textBox2.TabIndex = 10;
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(204)))), ((int)(((byte)(130)))));
+            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button21.Location = new System.Drawing.Point(19, 327);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(192, 74);
+            this.button21.TabIndex = 9;
+            this.button21.Text = "Calculate";
+            this.button21.UseVisualStyleBackColor = false;
+            // 
+            // finishYear
+            // 
+            this.finishYear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.finishYear.AutoCompleteCustomSource.AddRange(new string[] {
+            "Kilometers",
+            "Meters",
+            "Centimeters",
+            "Millimeters",
+            "Miles",
+            "Yards",
+            "Feet",
+            "Inches"});
+            this.finishYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.finishYear.FormattingEnabled = true;
+            this.finishYear.Items.AddRange(new object[] {
+            "A.M.",
+            "P.M"});
+            this.finishYear.Location = new System.Drawing.Point(427, 198);
+            this.finishYear.Name = "finishYear";
+            this.finishYear.Size = new System.Drawing.Size(85, 45);
+            this.finishYear.TabIndex = 34;
+            this.finishYear.Text = "00";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(391, 201);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(26, 37);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "/";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(32, 201);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(134, 37);
+            this.label10.TabIndex = 32;
+            this.label10.Text = "End day";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(23, 266);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(143, 37);
+            this.label11.TabIndex = 31;
+            this.label11.Text = "End time";
+            // 
+            // finishHour
+            // 
+            this.finishHour.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.finishHour.AutoCompleteCustomSource.AddRange(hours());
+            this.finishHour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.finishHour.FormattingEnabled = true;
+            this.finishHour.Items.AddRange(new object[] {
+            "A.M.",
+            "P.M"});
+            this.finishHour.Location = new System.Drawing.Point(183, 263);
+            this.finishHour.Name = "finishHour";
+            this.finishHour.Size = new System.Drawing.Size(85, 45);
+            this.finishHour.TabIndex = 30;
+            this.finishHour.Text = "00";
+            // 
+            // finishMinute
+            // 
+            this.finishMinute.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.finishMinute.AutoCompleteCustomSource.AddRange(minutes());
+            this.finishMinute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.finishMinute.FormattingEnabled = true;
+            this.finishMinute.Items.AddRange(new object[] {
+            "A.M.",
+            "P.M"});
+            this.finishMinute.Location = new System.Drawing.Point(300, 263);
+            this.finishMinute.Name = "finishMinute";
+            this.finishMinute.Size = new System.Drawing.Size(85, 45);
+            this.finishMinute.TabIndex = 29;
+            this.finishMinute.Text = "00";
+            // 
+            // finishTime
+            // 
+            this.finishTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            //this.finishTime.AutoCompleteCustomSource.AddRange();
+            this.finishTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.finishTime.FormattingEnabled = true;
+            this.finishTime.Items.AddRange(new object[] {
+            "A.M.",
+            "P.M"});
+            this.finishTime.Location = new System.Drawing.Point(405, 263);
+            this.finishTime.Name = "finishTime";
+            this.finishTime.Size = new System.Drawing.Size(107, 45);
+            this.finishTime.TabIndex = 27;
+            this.finishTime.Text = "A.M.";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(281, 266);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(26, 37);
+            this.label12.TabIndex = 28;
+            this.label12.Text = ":";
+            // 
+            // finishDay
+            // 
+            this.finishDay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            //this.finishDay.AutoCompleteCustomSource.AddRange();
+            this.finishDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.finishDay.FormattingEnabled = true;
+            this.finishDay.Items.AddRange(new object[] {
+            "A.M.",
+            "P.M"});
+            this.finishDay.Location = new System.Drawing.Point(300, 198);
+            this.finishDay.Name = "finishDay";
+            this.finishDay.Size = new System.Drawing.Size(85, 45);
+            this.finishDay.TabIndex = 26;
+            this.finishDay.Text = "00";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(274, 201);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(26, 37);
+            this.label13.TabIndex = 25;
+            this.label13.Text = "/";
+            // 
+            // finishMonth
+            // 
+            this.finishMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.finishMonth.AutoCompleteCustomSource.AddRange(months());
+            this.finishMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.finishMonth.FormattingEnabled = true;
+            this.finishMonth.Items.AddRange(new object[] {
+            "A.M.",
+            "P.M"});
+            this.finishMonth.Location = new System.Drawing.Point(183, 198);
+            this.finishMonth.Name = "finishMonth";
+            this.finishMonth.Size = new System.Drawing.Size(85, 45);
+            this.finishMonth.TabIndex = 24;
+            this.finishMonth.Text = "00";
+            // 
+            // startYear
+            // 
+            this.startYear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.startYear.AutoCompleteCustomSource.AddRange(years());
+            this.startYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.startYear.FormattingEnabled = true;
+            this.startYear.Items.AddRange(new object[] {
+            "A.M.",
+            "P.M"});
+            this.startYear.Location = new System.Drawing.Point(427, 72);
+            this.startYear.Name = "startYear";
+            this.startYear.Size = new System.Drawing.Size(85, 45);
+            this.startYear.TabIndex = 23;
+            this.startYear.Text = "00";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(391, 75);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(26, 37);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "/";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(32, 75);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(145, 37);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Start day";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(23, 138);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(154, 37);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Start time";
+            // 
+            // startHour
+            // 
+            this.startHour.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.startHour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.startHour.FormattingEnabled = true;
+            this.startHour.Items.AddRange(hours());
+            this.startHour.Location = new System.Drawing.Point(183, 135);
+            this.startHour.Name = "startHour";
+            this.startHour.Size = new System.Drawing.Size(85, 45);
+            this.startHour.TabIndex = 19;
+            this.startHour.Text = "00";
+            // 
+            // startMinute
+            // 
+            this.startMinute.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.startMinute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.startMinute.FormattingEnabled = true;
+            this.startMinute.Items.AddRange(minutes());
+            this.startMinute.Location = new System.Drawing.Point(300, 135);
+            this.startMinute.Name = "startMinute";
+            this.startMinute.Size = new System.Drawing.Size(85, 45);
+            this.startMinute.TabIndex = 18;
+            this.startMinute.Text = "00";
+            // 
+            // startTime
+            // 
+            this.startTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            //this.startTime.AutoCompleteCustomSource.AddRange();
+            this.startTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.startTime.FormattingEnabled = true;
+            this.startTime.Items.AddRange(new object[] {
+            "A.M.",
+            "P.M"});
+            this.startTime.Location = new System.Drawing.Point(405, 135);
+            this.startTime.Name = "startTime";
+            this.startTime.Size = new System.Drawing.Size(107, 45);
+            this.startTime.TabIndex = 16;
+            this.startTime.Text = "A.M.";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(281, 138);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(26, 37);
+            this.label4.TabIndex = 17;
+            this.label4.Text = ":";
+            // 
+            // startDay
+            // 
+            this.startDay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.startDay.AutoCompleteCustomSource.AddRange(days());
+            this.startDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.startDay.FormattingEnabled = true;
+            this.startDay.Items.AddRange(days());
+            this.startDay.Location = new System.Drawing.Point(300, 72);
+            this.startDay.Name = "startDay";
+            this.startDay.Size = new System.Drawing.Size(85, 45);
+            this.startDay.TabIndex = 15;
+            this.startDay.Text = "00";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(274, 75);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 37);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "/";
+            // 
+            // startMonth
+            // 
+            this.startMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.startMonth.Items.AddRange(months());
+            this.startMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.startMonth.FormattingEnabled = true;
+            this.startMonth.Location = new System.Drawing.Point(184, 72);
+            this.startMonth.Name = "startMonth";
+            this.startMonth.Size = new System.Drawing.Size(85, 45);
+            this.startMonth.TabIndex = 13;
+            this.startMonth.Text = "00";
             // 
             // groupBox1
             // 
@@ -530,80 +843,32 @@
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Location = new System.Drawing.Point(20, 22);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(538, 396);
+            this.groupBox1.Size = new System.Drawing.Size(538, 374);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Dates && Times";
+            this.groupBox1.Text = "Units && Measures";
             // 
-            // toolTip2
+            // textBox1
             // 
-            this.toolTip2.ToolTipTitle = "Hint:";
+            this.textBox1.Location = new System.Drawing.Point(246, 291);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(266, 44);
+            this.textBox1.TabIndex = 8;
             // 
-            // comboBox1
+            // button20
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
-            "Kilometers",
-            "Meters",
-            "Centimeters",
-            "Millimeters",
-            "Miles",
-            "Yards",
-            "Feet",
-            "Inches"});
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Kilometers",
-            "Meters",
-            "Centimeters",
-            "Millimeters",
-            "Miles",
-            "Yards",
-            "Feet",
-            "Inches"});
-            this.comboBox1.Location = new System.Drawing.Point(214, 141);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(253, 45);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.Text = "-- select --";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(93, 141);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 37);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "From";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(131, 217);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 37);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "To";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(58, 66);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 37);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Convert";
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Location = new System.Drawing.Point(214, 66);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(253, 44);
-            this.numericUpDown2.TabIndex = 5;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(204)))), ((int)(((byte)(130)))));
+            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button20.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button20.Location = new System.Drawing.Point(19, 275);
+            this.button20.Name = "button20";
+            this.button20.Size = new System.Drawing.Size(192, 74);
+            this.button20.TabIndex = 7;
+            this.button20.Text = "Calculate";
+            this.button20.UseVisualStyleBackColor = false;
             // 
             // comboBox2
             // 
@@ -630,40 +895,53 @@
             "Yards",
             "Feet",
             "Inches"});
-            this.comboBox2.Location = new System.Drawing.Point(214, 214);
+            this.comboBox2.Location = new System.Drawing.Point(214, 203);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(253, 45);
             this.comboBox2.TabIndex = 6;
             this.comboBox2.Text = "-- select --";
             // 
-            // button20
+            // numericUpDown2
             // 
-            this.button20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(204)))), ((int)(((byte)(130)))));
-            this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button20.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button20.Location = new System.Drawing.Point(19, 283);
-            this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(192, 74);
-            this.button20.TabIndex = 7;
-            this.button20.Text = "Calculate";
-            this.button20.UseVisualStyleBackColor = false;
+            this.numericUpDown2.Location = new System.Drawing.Point(214, 66);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(253, 44);
+            this.numericUpDown2.TabIndex = 5;
+            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox1
+            // label3
             // 
-            this.textBox1.Location = new System.Drawing.Point(246, 299);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(266, 44);
-            this.textBox1.TabIndex = 8;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(58, 66);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 37);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Convert";
             // 
-            // comboBox3
+            // label2
             // 
-            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(131, 206);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 37);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "To";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(93, 135);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 37);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "From";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox3.AutoCompleteCustomSource.AddRange(new string[] {
+            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
             "Kilometers",
             "Meters",
             "Centimeters",
@@ -672,32 +950,9 @@
             "Yards",
             "Feet",
             "Inches"});
-            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
-            this.comboBox3.Location = new System.Drawing.Point(183, 72);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(85, 45);
-            this.comboBox3.TabIndex = 13;
-            this.comboBox3.Text = "00";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(274, 75);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(26, 37);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "/";
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox4.AutoCompleteCustomSource.AddRange(new string[] {
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
             "Kilometers",
             "Meters",
             "Centimeters",
@@ -706,369 +961,15 @@
             "Yards",
             "Feet",
             "Inches"});
-            this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
-            this.comboBox4.Location = new System.Drawing.Point(300, 72);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(85, 45);
-            this.comboBox4.TabIndex = 15;
-            this.comboBox4.Text = "00";
+            this.comboBox1.Location = new System.Drawing.Point(214, 135);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(253, 45);
+            this.comboBox1.TabIndex = 0;
+            this.comboBox1.Text = "-- select --";
             // 
-            // startHourSelect
+            // toolTip2
             // 
-            this.startHourSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.startHourSelect.AutoCompleteCustomSource.AddRange(new string[] {
-            "Kilometers",
-            "Meters",
-            "Centimeters",
-            "Millimeters",
-            "Miles",
-            "Yards",
-            "Feet",
-            "Inches"});
-            this.startHourSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.startHourSelect.FormattingEnabled = true;
-            this.startHourSelect.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
-            this.startHourSelect.Location = new System.Drawing.Point(183, 135);
-            this.startHourSelect.Name = "startHourSelect";
-            this.startHourSelect.Size = new System.Drawing.Size(85, 45);
-            this.startHourSelect.TabIndex = 19;
-            this.startHourSelect.Text = "00";
-            // 
-            // startMinuteSelect
-            // 
-            this.startMinuteSelect.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.startMinuteSelect.AutoCompleteCustomSource.AddRange(new string[] {
-            "Kilometers",
-            "Meters",
-            "Centimeters",
-            "Millimeters",
-            "Miles",
-            "Yards",
-            "Feet",
-            "Inches"});
-            this.startMinuteSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.startMinuteSelect.FormattingEnabled = true;
-            this.startMinuteSelect.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
-            this.startMinuteSelect.Location = new System.Drawing.Point(300, 135);
-            this.startMinuteSelect.Name = "startMinuteSelect";
-            this.startMinuteSelect.Size = new System.Drawing.Size(85, 45);
-            this.startMinuteSelect.TabIndex = 18;
-            this.startMinuteSelect.Text = "00";
-            // 
-            // startTime
-            // 
-            this.startTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.startTime.AutoCompleteCustomSource.AddRange(new string[] {
-            "Kilometers",
-            "Meters",
-            "Centimeters",
-            "Millimeters",
-            "Miles",
-            "Yards",
-            "Feet",
-            "Inches"});
-            this.startTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.startTime.FormattingEnabled = true;
-            this.startTime.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
-            this.startTime.Location = new System.Drawing.Point(405, 135);
-            this.startTime.Name = "startTime";
-            this.startTime.Size = new System.Drawing.Size(107, 45);
-            this.startTime.TabIndex = 16;
-            this.startTime.Text = "A.M.";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(281, 138);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(26, 37);
-            this.label4.TabIndex = 17;
-            this.label4.Text = ":";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 138);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(154, 37);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Start time";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(32, 75);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(145, 37);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Start day";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox5.AutoCompleteCustomSource.AddRange(new string[] {
-            "Kilometers",
-            "Meters",
-            "Centimeters",
-            "Millimeters",
-            "Miles",
-            "Yards",
-            "Feet",
-            "Inches"});
-            this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
-            this.comboBox5.Location = new System.Drawing.Point(427, 72);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(85, 45);
-            this.comboBox5.TabIndex = 23;
-            this.comboBox5.Text = "00";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(391, 75);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(26, 37);
-            this.label8.TabIndex = 22;
-            this.label8.Text = "/";
-            // 
-            // comboBox6
-            // 
-            this.comboBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox6.AutoCompleteCustomSource.AddRange(new string[] {
-            "Kilometers",
-            "Meters",
-            "Centimeters",
-            "Millimeters",
-            "Miles",
-            "Yards",
-            "Feet",
-            "Inches"});
-            this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
-            this.comboBox6.Location = new System.Drawing.Point(427, 198);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(85, 45);
-            this.comboBox6.TabIndex = 34;
-            this.comboBox6.Text = "00";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(391, 201);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(26, 37);
-            this.label9.TabIndex = 33;
-            this.label9.Text = "/";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(32, 201);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(145, 37);
-            this.label10.TabIndex = 32;
-            this.label10.Text = "Start day";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(23, 266);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(154, 37);
-            this.label11.TabIndex = 31;
-            this.label11.Text = "Start time";
-            // 
-            // comboBox7
-            // 
-            this.comboBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox7.AutoCompleteCustomSource.AddRange(new string[] {
-            "Kilometers",
-            "Meters",
-            "Centimeters",
-            "Millimeters",
-            "Miles",
-            "Yards",
-            "Feet",
-            "Inches"});
-            this.comboBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
-            this.comboBox7.Location = new System.Drawing.Point(183, 263);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(85, 45);
-            this.comboBox7.TabIndex = 30;
-            this.comboBox7.Text = "00";
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox8.AutoCompleteCustomSource.AddRange(new string[] {
-            "Kilometers",
-            "Meters",
-            "Centimeters",
-            "Millimeters",
-            "Miles",
-            "Yards",
-            "Feet",
-            "Inches"});
-            this.comboBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
-            this.comboBox8.Location = new System.Drawing.Point(300, 263);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(85, 45);
-            this.comboBox8.TabIndex = 29;
-            this.comboBox8.Text = "00";
-            // 
-            // comboBox9
-            // 
-            this.comboBox9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox9.AutoCompleteCustomSource.AddRange(new string[] {
-            "Kilometers",
-            "Meters",
-            "Centimeters",
-            "Millimeters",
-            "Miles",
-            "Yards",
-            "Feet",
-            "Inches"});
-            this.comboBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
-            this.comboBox9.Location = new System.Drawing.Point(405, 263);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(107, 45);
-            this.comboBox9.TabIndex = 27;
-            this.comboBox9.Text = "A.M.";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(281, 266);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(26, 37);
-            this.label12.TabIndex = 28;
-            this.label12.Text = ":";
-            // 
-            // comboBox10
-            // 
-            this.comboBox10.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox10.AutoCompleteCustomSource.AddRange(new string[] {
-            "Kilometers",
-            "Meters",
-            "Centimeters",
-            "Millimeters",
-            "Miles",
-            "Yards",
-            "Feet",
-            "Inches"});
-            this.comboBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
-            this.comboBox10.Location = new System.Drawing.Point(300, 198);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(85, 45);
-            this.comboBox10.TabIndex = 26;
-            this.comboBox10.Text = "00";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(274, 201);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(26, 37);
-            this.label13.TabIndex = 25;
-            this.label13.Text = "/";
-            // 
-            // comboBox11
-            // 
-            this.comboBox11.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBox11.AutoCompleteCustomSource.AddRange(new string[] {
-            "Kilometers",
-            "Meters",
-            "Centimeters",
-            "Millimeters",
-            "Miles",
-            "Yards",
-            "Feet",
-            "Inches"});
-            this.comboBox11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
-            this.comboBox11.Location = new System.Drawing.Point(183, 198);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(85, 45);
-            this.comboBox11.TabIndex = 24;
-            this.comboBox11.Text = "00";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(246, 343);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(266, 44);
-            this.textBox2.TabIndex = 10;
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(204)))), ((int)(((byte)(130)))));
-            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button21.Location = new System.Drawing.Point(19, 327);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(192, 74);
-            this.button21.TabIndex = 9;
-            this.button21.Text = "Calculate";
-            this.button21.UseVisualStyleBackColor = false;
+            this.toolTip2.ToolTipTitle = "Hint:";
             // 
             // Form1
             // 
@@ -1135,28 +1036,28 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox finishYear;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox finishHour;
+        private System.Windows.Forms.ComboBox finishMinute;
+        private System.Windows.Forms.ComboBox finishTime;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox10;
+        private System.Windows.Forms.ComboBox finishDay;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox finishMonth;
+        private System.Windows.Forms.ComboBox startYear;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox startHourSelect;
-        private System.Windows.Forms.ComboBox startMinuteSelect;
+        private System.Windows.Forms.ComboBox startHour;
+        private System.Windows.Forms.ComboBox startMinute;
         private System.Windows.Forms.ComboBox startTime;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox startDay;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox startMonth;
     }
 }
 
