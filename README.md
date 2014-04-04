@@ -15,6 +15,10 @@ Of course, in real life (or even as in my academic assignment here) you would wa
 
 You'll notice this application is colorful. That's because the assignment was to be for 6th graders to use. I dislike how bland most C# applications are (particularly in academia) and so I welcomed this opportunity to build something colorful.
 
+## What's up with those Mac OS X file names?
+
+I have a deep distrust of the Windows operating system. Whenever I log into it, I tend to back up every keystroke into Dropbox. Since I run Windows virtually on my Macbook Pro, switching back to native Mac OS X is a swope of 4 fingers. I do as little in Windows as I possibly have to. So that's why this project, although specific to the Windows operating system, has Mac OS X files scattered throughout. Amusing that the default `.gitignore` configurations that GitHub provides for Visual Studio projects does not account for this. They should appreciate that a disproportionate number of GitHub users are likely to be VM'ing into Windows from a superior operating system. 
+
 ## Usage
 
 You are welcome to download, run, and learn from my code. You are also welcome to criticize it and improve it. 
