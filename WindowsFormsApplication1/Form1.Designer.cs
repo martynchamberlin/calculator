@@ -20,12 +20,15 @@
             base.Dispose(disposing);
         }
 
+
         #region Windows Form Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
+        /// 
+
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
@@ -542,23 +545,12 @@
             // 
             // finishYear
             // 
-            this.finishYear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.finishYear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.finishYear.AutoCompleteCustomSource.AddRange(new string[] {
-            "Kilometers",
-            "Meters",
-            "Centimeters",
-            "Millimeters",
-            "Miles",
-            "Yards",
-            "Feet",
-            "Inches"});
+
             this.finishYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishYear.FormattingEnabled = true;
-            this.finishYear.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
             this.finishYear.Location = new System.Drawing.Point(427, 198);
             this.finishYear.Name = "finishYear";
             this.finishYear.Size = new System.Drawing.Size(85, 45);
@@ -594,13 +586,11 @@
             // 
             // finishHour
             // 
-            this.finishHour.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.finishHour.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.finishHour.AutoCompleteCustomSource.AddRange(hours());
             this.finishHour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishHour.FormattingEnabled = true;
-            this.finishHour.Items.AddRange(hours());
             this.finishHour.Location = new System.Drawing.Point(183, 263);
             this.finishHour.Name = "finishHour";
             this.finishHour.Size = new System.Drawing.Size(85, 45);
@@ -609,12 +599,11 @@
             // 
             // finishMinute
             // 
-            this.finishMinute.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.finishMinute.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.finishMinute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishMinute.FormattingEnabled = true;
-            this.finishMinute.Items.AddRange(minutes());
             this.finishMinute.Location = new System.Drawing.Point(300, 263);
             this.finishMinute.Name = "finishMinute";
             this.finishMinute.Size = new System.Drawing.Size(85, 45);
@@ -623,8 +612,8 @@
             // 
             // finishTime
             // 
-            this.finishTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.finishTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             //this.finishTime.AutoCompleteCustomSource.AddRange();
             this.finishTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -649,12 +638,11 @@
             // 
             // finishDay
             // 
-            this.finishDay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.finishDay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.finishDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishDay.FormattingEnabled = true;
-            this.finishDay.Items.AddRange(days());
             this.finishDay.Location = new System.Drawing.Point(300, 198);
             this.finishDay.Name = "finishDay";
             this.finishDay.Size = new System.Drawing.Size(85, 45);
@@ -672,12 +660,11 @@
             // 
             // finishMonth
             // 
-            this.finishMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.finishMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.finishMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishMonth.FormattingEnabled = true;
-            this.finishMonth.Items.AddRange(months());
             this.finishMonth.Location = new System.Drawing.Point(183, 198);
             this.finishMonth.Name = "finishMonth";
             this.finishMonth.Size = new System.Drawing.Size(85, 45);
@@ -686,12 +673,11 @@
             // 
             // startYear
             // 
-            this.startYear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.startYear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.startYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startYear.FormattingEnabled = true;
-            this.startYear.Items.AddRange(years());
             this.startYear.Location = new System.Drawing.Point(427, 72);
             this.startYear.Name = "startYear";
             this.startYear.Size = new System.Drawing.Size(85, 45);
@@ -727,12 +713,11 @@
             // 
             // startHour
             // 
-            this.startHour.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.startHour.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.startHour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startHour.FormattingEnabled = true;
-            this.startHour.Items.AddRange(hours());
             this.startHour.Location = new System.Drawing.Point(183, 135);
             this.startHour.Name = "startHour";
             this.startHour.Size = new System.Drawing.Size(85, 45);
@@ -741,12 +726,12 @@
             // 
             // startMinute
             // 
-            this.startMinute.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.startMinute.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.startMinute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startMinute.FormattingEnabled = true;
-            this.startMinute.Items.AddRange(minutes());
+
             this.startMinute.Location = new System.Drawing.Point(300, 135);
             this.startMinute.Name = "startMinute";
             this.startMinute.Size = new System.Drawing.Size(85, 45);
@@ -755,8 +740,8 @@
             // 
             // startTime
             // 
-            this.startTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.startTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             //this.startTime.AutoCompleteCustomSource.AddRange();
             this.startTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -781,13 +766,11 @@
             // 
             // startDay
             // 
-            this.startDay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.startDay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.startDay.AutoCompleteCustomSource.AddRange(days());
             this.startDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startDay.FormattingEnabled = true;
-            this.startDay.Items.AddRange(days());
             this.startDay.Location = new System.Drawing.Point(300, 72);
             this.startDay.Name = "startDay";
             this.startDay.Size = new System.Drawing.Size(85, 45);
@@ -805,10 +788,9 @@
             // 
             // startMonth
             // 
-            this.startMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.startMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.startMonth.Items.AddRange(months());
             this.startMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startMonth.FormattingEnabled = true;
             this.startMonth.Location = new System.Drawing.Point(184, 72);
@@ -858,8 +840,8 @@
             // 
             // comboBox2
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox2.AutoCompleteCustomSource.AddRange(new string[] {
             "Kilometers",
@@ -924,8 +906,8 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
             "Kilometers",
@@ -983,7 +965,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
@@ -1046,4 +1027,5 @@
         private System.Windows.Forms.ComboBox startMonth;
     }
 }
+
 

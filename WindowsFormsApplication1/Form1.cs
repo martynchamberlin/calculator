@@ -12,15 +12,17 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
-        private string lastButtonWasA = "";
         private Timer timer = new Timer();
         private bool userIsPressingDelete = false;
 
         public Form1()
         {
             InitializeComponent();
+
             // Frustrating that VS is by default cutting off the bottom. Weird.
             this.Height = 544;
+            // Give dropdowns some context
+            updateDateDropdownsToProperDefaults();
         }
 
         private void btnWasClicked(object sender, EventArgs e)
@@ -28,14 +30,10 @@ namespace WindowsFormsApplication1
             Button btn = (Button)sender;
             // First we assume that they clicked a number
             string output = "";
-            bool is_int = false;
-            bool is_operator = false;
             try
             {
                 int num = Convert.ToInt16(btn.Text);
-                is_int = true;
                 output = btn.Text;
-                lastButtonWasA = "operand";
             }
             catch (FormatException error)
             {
@@ -43,9 +41,7 @@ namespace WindowsFormsApplication1
             }
             if (this.is_operator(btn.Text))
             {
-                is_operator = true;
                 output = " " + btn.Text + " ";
-                lastButtonWasA = "operator";
             }
 
             updateDisplay(output);
@@ -208,6 +204,30 @@ namespace WindowsFormsApplication1
             return minutes;
         }
 
+        private void updateDateDropdownsToProperDefaults()
+        {
+
+            // Programically populate the dropdowns for dates
+            this.startMinute.Items.AddRange(minutes());
+            this.finishMinute.Items.AddRange(minutes());
+            this.startHour.Items.AddRange(hours());
+            this.finishHour.Items.AddRange(hours());
+            this.startDay.Items.AddRange(days());
+            this.finishDay.Items.AddRange(days());
+            this.startMonth.Items.AddRange(months());
+            this.finishMonth.Items.AddRange(months());
+            this.startYear.Items.AddRange(years());
+            this.finishYear.Items.AddRange(years());
+
+            // Now that they're autopopulated, let's predefine what the default selected 
+            // option is for each dropdown
+            DateTime current = new DateTime();
+            current = DateTime.Now;
+            int hour = current.Hour;
+            //MessageBox.Show(""+hour);
+
+            startHour.SelectedItem = "9";// Convert.ToString(hour);
+        }
 
     }
 }
