@@ -177,7 +177,7 @@ namespace WindowsFormsApplication1
         public String[] days()
         {
             String[] days = new String[31];
-            for ( int i = 1; i <= 31; i++)
+            for (int i = 1; i <= 31; i++)
             {
                 days[i - 1] = i < 10 ? "0" + Convert.ToString(i) : Convert.ToString(i);
             }
@@ -190,7 +190,7 @@ namespace WindowsFormsApplication1
             for (int i = 1; i <= 12; i++)
             {
                 hours[i - 1] = Convert.ToString(i);
-                }
+            }
             return hours;
         }
 
@@ -234,12 +234,12 @@ namespace WindowsFormsApplication1
 
             startYear.SelectedItem = (year < 10 ? "0" : "") + Convert.ToString(year).Substring(2);
             startMonth.SelectedItem = (month < 10 ? "0" : "") + Convert.ToString(month);
-            startDay.SelectedItem = (day < 10 ? "0" : "" ) + Convert.ToString(day);
+            startDay.SelectedItem = (day < 10 ? "0" : "") + Convert.ToString(day);
             startHour.SelectedItem = Convert.ToString(hour);
-            startMinute.SelectedItem = (minute < 10 ? "0" : "" ) + Convert.ToString(minute);
+            startMinute.SelectedItem = (minute < 10 ? "0" : "") + Convert.ToString(minute);
             startTime.SelectedItem = ampm;
 
-            TimeSpan span = new TimeSpan( 0, 5, 0, 0);
+            TimeSpan span = new TimeSpan(0, 5, 0, 0);
             DateTime future = DateTime.Now.Add(span);
             year = future.Year;
             month = future.Month;
@@ -277,7 +277,7 @@ namespace WindowsFormsApplication1
             {
                 startHour += 12;
             }
-            else if ( startHour == 12 && startTime.SelectedItem == "A.M.")
+            else if (startHour == 12 && startTime.SelectedItem == "A.M.")
             {
                 startHour = 0;
             }
@@ -293,9 +293,72 @@ namespace WindowsFormsApplication1
             DateTime start = new DateTime(startYear, startMonth, startDay, startHour, startMinute, 0);
             DateTime finish = new DateTime(finishYear, finishMonth, finishDay, finishHour, finishMinute, 0);
             TimeSpan delta = finish.Subtract(start);
-            output = Convert.ToString( delta.Days + " : " + delta.Hours + " : " + delta.Minutes);
+            output = Convert.ToString(delta.Days + " : " + delta.Hours + " : " + delta.Minutes);
             textBox2.Text = output;
         }
 
+        private void calculateUnits_Click(object sender, EventArgs e)
+        {
+            double unit = Convert.ToDouble(numUnits.Value);
+            String from = fromUnit.Text;
+            String to = toUnit.Text;
+            if (from == "" || to == "")
+            {
+                MessageBox.Show("Please select from and to units");
+            }
+            else
+            {
+                double answer = this.convert(unit, from, to);
+                outputUnits.Text = Convert.ToString(answer).Substring(0, 10);
+               
+                units.Text = to;
+
+            }
+        }
+
+        /** 
+         * To convert anything to anything, all we have to do is convert the `from` variable to 
+         * Kilometers, and then we can convert from Kilometers to the unit of measure that we wish
+         * to use. 
+         */
+        public double convert(double unit, String from, String to)
+        {
+            var answers = new Dictionary<string, double>();
+            switch ( from )
+            {
+                case "Kilometers":
+                    answers["Kilometers"] = unit;
+                    break;
+                case "Meters":
+                    answers["Kilometers"] = unit / 1000.0;
+                    break;
+                case "Centimeters":
+                    answers["Kilometers"] = unit / 1000.0 / 100.0;
+                    break;
+                case "Millimeters":
+                    answers["Kilometers"] = unit / 1000.0 / 100.0 / 10;
+                    break;
+                case "Inches":
+                    answers["Kilometers"] = unit / 1000.0 / 100.0 * 2.54;
+                    break;
+                case "Feet":
+                    answers["Kilometers"] = unit / 1000.0 / 100.0 * 2.54 * 12.0;
+                    break;
+                case "Yards":
+                    answers["Kilometers"] = unit / 1000.0 / 100.0 * 2.54 * 12.0 * 3.0;
+                    break;
+                case "Miles":
+                    answers["Kilometers"] = unit / 1000.0 / 100.0 * 2.54 * 12.0 * 3.0 * 1760.0;
+                    break;
+            }
+            answers["Meters"] = answers["Kilometers"] * 1000.0;
+            answers["Centimeters"] = answers["Meters"] * 100.0;
+            answers["Millimeters"] = answers["Centimeters"] * 10.0;
+            answers["Inches"] = answers["Centimeters"] / 2.54;
+            answers["Feet"] = answers["Inches"] / 12.0;
+            answers["Yards"] = answers["Feet"] / 3.0;
+            answers["Miles"] = answers["Yards"] / 1760.0;
+            return answers[ to ];
+        }
     }
 }
