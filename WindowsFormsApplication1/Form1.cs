@@ -229,7 +229,7 @@ namespace WindowsFormsApplication1
             int minute = current.Minute;
 
             // Frustrating that VS insists on 0-23 hours time. Must rememdy this with code...
-            String ampm = hour >= 12 ? "P.M." : "A.M";
+            String ampm = hour >= 12 ? "P.M." : "A.M.";
             hour = hour == 0 ? 12 : hour % 12;
 
             startYear.SelectedItem = (year < 10 ? "0" : "") + Convert.ToString(year).Substring(2);
@@ -247,7 +247,7 @@ namespace WindowsFormsApplication1
             hour = future.Hour;
             minute = future.Minute;
 
-            ampm = hour >= 12 ? "P.M." : "A.M";
+            ampm = hour >= 12 ? "P.M." : "A.M.";
             hour = hour == 0 ? 12 : hour % 12;
 
             finishYear.SelectedItem = (year < 10 ? "0" : "") + Convert.ToString(year).Substring(2);
@@ -294,7 +294,7 @@ namespace WindowsFormsApplication1
             DateTime finish = new DateTime(finishYear, finishMonth, finishDay, finishHour, finishMinute, 0);
             TimeSpan delta = finish.Subtract(start);
             output = Convert.ToString( delta.Days + " : " + delta.Hours + " : " + delta.Minutes);
-            dateOutput.Text = output;
+            textBox2.Text = output;
         }
 
     }
