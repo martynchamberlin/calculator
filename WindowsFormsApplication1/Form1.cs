@@ -13,7 +13,6 @@ namespace WindowsFormsApplication1
     public partial class Form1 : Form
     {
         private Timer timer = new Timer();
-        private bool userIsPressingDelete = false;
 
         public Form1()
         {
@@ -28,20 +27,14 @@ namespace WindowsFormsApplication1
         private void btnWasClicked(object sender, EventArgs e)
         {
             Button btn = (Button)sender;
-            // First we assume that they clicked a number
-            string output = "";
-            try
-            {
-                int num = Convert.ToInt16(btn.Text);
-                output = btn.Text;
-            }
-            catch (FormatException error)
-            {
-
-            }
+            string output;
             if (this.is_operator(btn.Text))
             {
                 output = " " + btn.Text + " ";
+            }
+            else
+            {
+                output = btn.Text;
             }
 
             updateDisplay(output);
@@ -97,7 +90,7 @@ namespace WindowsFormsApplication1
                     var something = new DataTable().Compute(input, null);
                     display.Text = Convert.ToString(something);
                 }
-                catch (EvaluateException error)
+                catch (Exception error)
                 {
                     MessageBox.Show("An error occured! Please make sure that the input is valid");
                 }
@@ -136,7 +129,6 @@ namespace WindowsFormsApplication1
         // still holding down on it. If so, then execute a function 
         private void btnClear_MouseDown(object sender, MouseEventArgs e)
         {
-            userIsPressingDelete = true;
             timer.Tick += new EventHandler(emptyOutput);
             timer.Interval = 750;
             timer.Enabled = true;
@@ -153,10 +145,7 @@ namespace WindowsFormsApplication1
         // If the user is pressing down when this fires, clear the output
         void emptyOutput(object sender, EventArgs e)
         {
-            if (userIsPressingDelete)
-            {
                 display.Text = "0";
-            }
         }
 
         public String[] months()
