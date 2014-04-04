@@ -260,8 +260,41 @@ namespace WindowsFormsApplication1
 
         private void calculateTime_Click(object sender, EventArgs e)
         {
-            //int startYear = 
-            //DateTime start = new DateTime( )
+            String output = "";
+            int startYear = Convert.ToInt32("20" + this.startYear.SelectedItem);
+            int startMonth = Convert.ToInt32(this.startMonth.SelectedItem);
+            int startDay = Convert.ToInt32(this.startDay.SelectedItem);
+            int startHour = Convert.ToInt32(this.startHour.SelectedItem);
+            int startMinute = Convert.ToInt32(this.startMinute.SelectedItem);
+
+            int finishYear = Convert.ToInt32("20" + this.finishYear.SelectedItem);
+            int finishMonth = Convert.ToInt32(this.finishMonth.SelectedItem);
+            int finishDay = Convert.ToInt32(this.finishDay.SelectedItem);
+            int finishHour = Convert.ToInt32(this.finishHour.SelectedItem);
+            int finishMinute = Convert.ToInt32(this.finishMinute.SelectedItem);
+
+            if (startHour < 12 && startTime.SelectedItem == "P.M.")
+            {
+                startHour += 12;
+            }
+            else if ( startHour == 12 && startTime.SelectedItem == "A.M.")
+            {
+                startHour = 0;
+            }
+
+            if (finishHour < 12 && finishTime.SelectedItem == "P.M.")
+            {
+                finishHour += 12;
+            }
+            else if (finishHour == 12 && finishTime.SelectedItem == "A.M.")
+            {
+                finishHour = 0;
+            }
+            DateTime start = new DateTime(startYear, startMonth, startDay, startHour, startMinute, 0);
+            DateTime finish = new DateTime(finishYear, finishMonth, finishDay, finishHour, finishMinute, 0);
+            TimeSpan delta = finish.Subtract(start);
+            output = Convert.ToString( delta.Days + " : " + delta.Hours + " : " + delta.Minutes);
+            dateOutput.Text = output;
         }
 
     }

@@ -58,7 +58,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.dateOutput = new System.Windows.Forms.TextBox();
             this.calculateTime = new System.Windows.Forms.Button();
             this.finishYear = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -493,7 +493,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.dateOutput);
             this.groupBox2.Controls.Add(this.calculateTime);
             this.groupBox2.Controls.Add(this.finishYear);
             this.groupBox2.Controls.Add(this.label9);
@@ -524,18 +524,18 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Dates && Times";
             // 
-            // textBox2
+            // dateOutput
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(246, 332);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(266, 37);
-            this.textBox2.TabIndex = 10;
-            this.textBox2.Text = "0 : 5 : 0";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.dateOutput.BackColor = System.Drawing.Color.White;
+            this.dateOutput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dateOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateOutput.Location = new System.Drawing.Point(246, 332);
+            this.dateOutput.Name = "dateOutput";
+            this.dateOutput.ReadOnly = true;
+            this.dateOutput.Size = new System.Drawing.Size(266, 37);
+            this.dateOutput.TabIndex = 10;
+            this.dateOutput.Text = "0 : 5 : 0";
+            this.dateOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // calculateTime
             // 
@@ -1047,7 +1047,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox dateOutput;
         private System.Windows.Forms.Button calculateTime;
         private System.Windows.Forms.ComboBox finishYear;
         private System.Windows.Forms.Label label9;
