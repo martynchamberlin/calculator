@@ -15,7 +15,8 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
-            this.Height = 554;
+            // Frustrating that VS is by default cutting off the bottom. Weird.
+            this.Height = 544;
         }
     }
 }
