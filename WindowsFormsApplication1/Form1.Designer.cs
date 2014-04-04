@@ -600,9 +600,7 @@
             this.finishHour.AutoCompleteCustomSource.AddRange(hours());
             this.finishHour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishHour.FormattingEnabled = true;
-            this.finishHour.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
+            this.finishHour.Items.AddRange(hours());
             this.finishHour.Location = new System.Drawing.Point(183, 263);
             this.finishHour.Name = "finishHour";
             this.finishHour.Size = new System.Drawing.Size(85, 45);
@@ -614,12 +612,9 @@
             this.finishMinute.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.finishMinute.AutoCompleteCustomSource.AddRange(minutes());
             this.finishMinute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishMinute.FormattingEnabled = true;
-            this.finishMinute.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
+            this.finishMinute.Items.AddRange(minutes());
             this.finishMinute.Location = new System.Drawing.Point(300, 263);
             this.finishMinute.Name = "finishMinute";
             this.finishMinute.Size = new System.Drawing.Size(85, 45);
@@ -657,12 +652,9 @@
             this.finishDay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            //this.finishDay.AutoCompleteCustomSource.AddRange();
             this.finishDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishDay.FormattingEnabled = true;
-            this.finishDay.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
+            this.finishDay.Items.AddRange(days());
             this.finishDay.Location = new System.Drawing.Point(300, 198);
             this.finishDay.Name = "finishDay";
             this.finishDay.Size = new System.Drawing.Size(85, 45);
@@ -683,12 +675,9 @@
             this.finishMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.finishMonth.AutoCompleteCustomSource.AddRange(months());
             this.finishMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishMonth.FormattingEnabled = true;
-            this.finishMonth.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
+            this.finishMonth.Items.AddRange(months());
             this.finishMonth.Location = new System.Drawing.Point(183, 198);
             this.finishMonth.Name = "finishMonth";
             this.finishMonth.Size = new System.Drawing.Size(85, 45);
@@ -700,12 +689,9 @@
             this.startYear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.startYear.AutoCompleteCustomSource.AddRange(years());
             this.startYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startYear.FormattingEnabled = true;
-            this.startYear.Items.AddRange(new object[] {
-            "A.M.",
-            "P.M"});
+            this.startYear.Items.AddRange(years());
             this.startYear.Location = new System.Drawing.Point(427, 72);
             this.startYear.Name = "startYear";
             this.startYear.Size = new System.Drawing.Size(85, 45);
