@@ -59,7 +59,7 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button21 = new System.Windows.Forms.Button();
+            this.calculateTime = new System.Windows.Forms.Button();
             this.finishYear = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -92,6 +92,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
+            this.label14 = new System.Windows.Forms.Label();
+            this.units = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -490,8 +492,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.button21);
+            this.groupBox2.Controls.Add(this.calculateTime);
             this.groupBox2.Controls.Add(this.finishYear);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
@@ -523,32 +526,37 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(246, 343);
+            this.textBox2.BackColor = System.Drawing.Color.White;
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(246, 332);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(266, 44);
+            this.textBox2.Size = new System.Drawing.Size(266, 37);
             this.textBox2.TabIndex = 10;
+            this.textBox2.Text = "0 : 5 : 0";
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button21
+            // calculateTime
             // 
-            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(204)))), ((int)(((byte)(130)))));
-            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button21.Location = new System.Drawing.Point(19, 327);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(192, 74);
-            this.button21.TabIndex = 9;
-            this.button21.Text = "Calculate";
-            this.button21.UseVisualStyleBackColor = false;
+            this.calculateTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(204)))), ((int)(((byte)(130)))));
+            this.calculateTime.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.calculateTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.calculateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculateTime.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.calculateTime.Location = new System.Drawing.Point(19, 327);
+            this.calculateTime.Name = "calculateTime";
+            this.calculateTime.Size = new System.Drawing.Size(192, 74);
+            this.calculateTime.TabIndex = 9;
+            this.calculateTime.Text = "Calculate";
+            this.calculateTime.UseVisualStyleBackColor = false;
+            this.calculateTime.Click += new System.EventHandler(this.calculateTime_Click);
             // 
             // finishYear
             // 
-            this.finishYear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.finishYear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-
             this.finishYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishYear.FormattingEnabled = true;
             this.finishYear.Location = new System.Drawing.Point(427, 198);
@@ -569,7 +577,8 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(32, 201);
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label10.Location = new System.Drawing.Point(43, 201);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(134, 37);
             this.label10.TabIndex = 32;
@@ -578,7 +587,8 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(23, 266);
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label11.Location = new System.Drawing.Point(34, 266);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(143, 37);
             this.label11.TabIndex = 31;
@@ -586,8 +596,8 @@
             // 
             // finishHour
             // 
-            this.finishHour.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.finishHour.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.finishHour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishHour.FormattingEnabled = true;
@@ -599,8 +609,8 @@
             // 
             // finishMinute
             // 
-            this.finishMinute.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.finishMinute.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.finishMinute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishMinute.FormattingEnabled = true;
@@ -612,15 +622,14 @@
             // 
             // finishTime
             // 
-            this.finishTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.finishTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            //this.finishTime.AutoCompleteCustomSource.AddRange();
             this.finishTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishTime.FormattingEnabled = true;
             this.finishTime.Items.AddRange(new object[] {
             "A.M.",
-            "P.M"});
+            "P.M."});
             this.finishTime.Location = new System.Drawing.Point(405, 263);
             this.finishTime.Name = "finishTime";
             this.finishTime.Size = new System.Drawing.Size(107, 45);
@@ -638,8 +647,8 @@
             // 
             // finishDay
             // 
-            this.finishDay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.finishDay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.finishDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishDay.FormattingEnabled = true;
@@ -660,8 +669,8 @@
             // 
             // finishMonth
             // 
-            this.finishMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.finishMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.finishMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.finishMonth.FormattingEnabled = true;
@@ -673,8 +682,8 @@
             // 
             // startYear
             // 
-            this.startYear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.startYear.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.startYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startYear.FormattingEnabled = true;
@@ -696,6 +705,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label7.Location = new System.Drawing.Point(32, 75);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(145, 37);
@@ -705,6 +715,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label6.Location = new System.Drawing.Point(23, 138);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(154, 37);
@@ -713,8 +724,8 @@
             // 
             // startHour
             // 
-            this.startHour.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.startHour.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.startHour.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startHour.FormattingEnabled = true;
@@ -726,12 +737,11 @@
             // 
             // startMinute
             // 
-            this.startMinute.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.startMinute.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.startMinute.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startMinute.FormattingEnabled = true;
-
             this.startMinute.Location = new System.Drawing.Point(300, 135);
             this.startMinute.Name = "startMinute";
             this.startMinute.Size = new System.Drawing.Size(85, 45);
@@ -740,15 +750,14 @@
             // 
             // startTime
             // 
-            this.startTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.startTime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            //this.startTime.AutoCompleteCustomSource.AddRange();
             this.startTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startTime.FormattingEnabled = true;
             this.startTime.Items.AddRange(new object[] {
             "A.M.",
-            "P.M"});
+            "P.M."});
             this.startTime.Location = new System.Drawing.Point(405, 135);
             this.startTime.Name = "startTime";
             this.startTime.Size = new System.Drawing.Size(107, 45);
@@ -766,8 +775,8 @@
             // 
             // startDay
             // 
-            this.startDay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.startDay.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.startDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startDay.FormattingEnabled = true;
@@ -788,8 +797,8 @@
             // 
             // startMonth
             // 
-            this.startMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.startMonth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.startMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.startMonth.FormattingEnabled = true;
@@ -801,6 +810,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.units);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.button20);
             this.groupBox1.Controls.Add(this.comboBox2);
@@ -818,11 +828,16 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(246, 291);
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(246, 282);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(266, 44);
+            this.textBox1.Size = new System.Drawing.Size(266, 37);
             this.textBox1.TabIndex = 8;
+            this.textBox1.Text = "0";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button20
             // 
@@ -840,8 +855,8 @@
             // 
             // comboBox2
             // 
-            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox2.AutoCompleteCustomSource.AddRange(new string[] {
             "Kilometers",
@@ -880,6 +895,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(58, 66);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 37);
@@ -889,6 +905,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(131, 206);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 37);
@@ -898,6 +915,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(93, 135);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 37);
@@ -906,8 +924,8 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
             "Kilometers",
@@ -939,15 +957,43 @@
             // 
             this.toolTip2.ToolTipTitle = "Hint:";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label14.Location = new System.Drawing.Point(263, 372);
+            this.label14.Margin = new System.Windows.Forms.Padding(0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(223, 25);
+            this.label14.TabIndex = 35;
+            this.label14.Text = "days : hours : minutes";
+            // 
+            // units
+            // 
+            this.units.AutoSize = true;
+            this.units.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.units.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.units.Location = new System.Drawing.Point(350, 323);
+            this.units.Margin = new System.Windows.Forms.Padding(0);
+            this.units.Name = "units";
+            this.units.Size = new System.Drawing.Size(58, 25);
+            this.units.TabIndex = 36;
+            this.units.Text = "units";
+            // 
             // Form1
             // 
+            this.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(644, 971);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.ShowIcon = false;
             this.Text = "Calculator";
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -1002,7 +1048,7 @@
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.Button calculateTime;
         private System.Windows.Forms.ComboBox finishYear;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
@@ -1025,6 +1071,8 @@
         private System.Windows.Forms.ComboBox startDay;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox startMonth;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label units;
     }
 }
 
