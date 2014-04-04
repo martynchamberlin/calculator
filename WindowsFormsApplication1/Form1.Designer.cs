@@ -111,7 +111,7 @@
             this.button18.TabIndex = 16;
             this.button18.Text = "=";
             this.button18.UseVisualStyleBackColor = false;
-            this.button18.Click += new System.EventHandler(this.btnWasClicked);
+            this.button18.Click += new System.EventHandler(this.calculateBtn);
             // 
             // button16
             // 
@@ -185,7 +185,9 @@
             this.button12.TabIndex = 4;
             this.button12.Text = "C";
             this.button12.UseVisualStyleBackColor = false;
-            this.button12.Click += new System.EventHandler(this.btnWasClicked);
+            this.button12.Click += new System.EventHandler(this.deleteWasClicked);
+            this.button12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnClear_MouseDown);
+            this.button12.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnClear_MouseUp);
             // 
             // button3
             // 
