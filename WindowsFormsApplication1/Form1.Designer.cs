@@ -48,7 +48,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.button17 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.display = new System.Windows.Forms.TextBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -64,7 +64,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel1.Controls.Add(this.button18, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.button16, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.button15, 3, 3);
@@ -111,6 +111,7 @@
             this.button18.TabIndex = 16;
             this.button18.Text = "=";
             this.button18.UseVisualStyleBackColor = false;
+            this.button18.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button16
             // 
@@ -125,6 +126,7 @@
             this.button16.TabIndex = 13;
             this.button16.Text = "+";
             this.button16.UseVisualStyleBackColor = false;
+            this.button16.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button15
             // 
@@ -138,6 +140,7 @@
             this.button15.TabIndex = 5;
             this.button15.Text = "-";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button14
             // 
@@ -152,6 +155,7 @@
             this.button14.TabIndex = 12;
             this.button14.Text = "/";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button13
             // 
@@ -166,6 +170,7 @@
             this.button13.TabIndex = 4;
             this.button13.Text = "*";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button12
             // 
@@ -180,6 +185,7 @@
             this.button12.TabIndex = 4;
             this.button12.Text = "C";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button3
             // 
@@ -194,6 +200,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "9";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button2
             // 
@@ -209,6 +216,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "8";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button1
             // 
@@ -224,6 +232,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "7";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button4
             // 
@@ -238,6 +247,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button5
             // 
@@ -252,6 +262,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button6
             // 
@@ -266,6 +277,7 @@
             this.button6.TabIndex = 6;
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button7
             // 
@@ -280,6 +292,7 @@
             this.button7.TabIndex = 7;
             this.button7.Text = "1";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button9
             // 
@@ -294,6 +307,7 @@
             this.button9.TabIndex = 9;
             this.button9.Text = "3";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button10
             // 
@@ -308,6 +322,7 @@
             this.button10.TabIndex = 10;
             this.button10.Text = "0";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button11
             // 
@@ -322,6 +337,7 @@
             this.button11.TabIndex = 11;
             this.button11.Text = ".";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // button8
             // 
@@ -336,6 +352,7 @@
             this.button8.TabIndex = 14;
             this.button8.Text = "2";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.btnWasClicked);
             // 
             // numericUpDown1
             // 
@@ -359,17 +376,18 @@
             this.button17.TabIndex = 2;
             this.button17.Text = "Add to Screen";
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.Click += new System.EventHandler(this.addToScreenClicked);
             // 
-            // textBox1
+            // display
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(31, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(517, 60);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.display.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.display.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.display.Location = new System.Drawing.Point(31, 33);
+            this.display.Name = "display";
+            this.display.Size = new System.Drawing.Size(517, 60);
+            this.display.TabIndex = 3;
+            this.display.Text = "0";
+            this.display.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tabControl1
             // 
@@ -383,7 +401,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.display);
             this.tabPage1.Controls.Add(this.tableLayoutPanel1);
             this.tabPage1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
@@ -400,7 +418,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 34);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(590, 888);
+            this.tabPage2.Size = new System.Drawing.Size(586, 880);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Special";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -446,7 +464,7 @@
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Button button17;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox display;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
