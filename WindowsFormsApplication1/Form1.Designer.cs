@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.button18 = new System.Windows.Forms.Button();
             this.button16 = new System.Windows.Forms.Button();
@@ -52,6 +53,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -184,6 +186,7 @@
             this.button12.Size = new System.Drawing.Size(124, 124);
             this.button12.TabIndex = 4;
             this.button12.Text = "C";
+            this.toolTip2.SetToolTip(this.button12, "Longpress this to clear all text");
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.deleteWasClicked);
             this.button12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnClear_MouseDown);
@@ -425,6 +428,10 @@
             this.tabPage2.Text = "Special";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // toolTip2
+            // 
+            this.toolTip2.ToolTipTitle = "Hint:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -445,7 +452,7 @@
         }
 
         #endregion
-
+        private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
@@ -470,6 +477,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.ToolTip toolTip2;
     }
 }
 
