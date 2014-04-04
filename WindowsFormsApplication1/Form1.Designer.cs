@@ -54,6 +54,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.toolTip2 = new System.Windows.Forms.ToolTip(this.components);
+            this.button19 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.tabControl1.SuspendLayout();
@@ -68,10 +69,6 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 130F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
             this.tableLayoutPanel1.Controls.Add(this.button18, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.button16, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.button15, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.button14, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button13, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.button12, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.button3, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.button2, 1, 1);
@@ -86,6 +83,11 @@
             this.tableLayoutPanel1.Controls.Add(this.button8, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.numericUpDown1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.button17, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.button13, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.button14, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.button16, 3, 5);
+            this.tableLayoutPanel1.Controls.Add(this.button15, 3, 4);
+            this.tableLayoutPanel1.Controls.Add(this.button19, 3, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(31, 118);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
@@ -102,14 +104,14 @@
             // button18
             // 
             this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.tableLayoutPanel1.SetColumnSpan(this.button18, 4);
+            this.tableLayoutPanel1.SetColumnSpan(this.button18, 3);
             this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button18.ForeColor = System.Drawing.Color.Black;
             this.button18.Location = new System.Drawing.Point(3, 603);
             this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(514, 124);
+            this.button18.Size = new System.Drawing.Size(384, 124);
             this.button18.TabIndex = 16;
             this.button18.Text = "=";
             this.button18.UseVisualStyleBackColor = false;
@@ -122,7 +124,7 @@
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button16.Location = new System.Drawing.Point(393, 473);
+            this.button16.Location = new System.Drawing.Point(393, 603);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(124, 124);
             this.button16.TabIndex = 13;
@@ -136,7 +138,7 @@
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button15.Location = new System.Drawing.Point(393, 343);
+            this.button15.Location = new System.Drawing.Point(393, 473);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(124, 124);
             this.button15.TabIndex = 5;
@@ -166,7 +168,7 @@
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button13.Location = new System.Drawing.Point(393, 83);
+            this.button13.Location = new System.Drawing.Point(393, 343);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(124, 124);
             this.button13.TabIndex = 4;
@@ -432,6 +434,21 @@
             // 
             this.toolTip2.ToolTipTitle = "Hint:";
             // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(170)))), ((int)(((byte)(229)))));
+            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button19.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button19.Location = new System.Drawing.Point(393, 83);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(124, 124);
+            this.button19.TabIndex = 17;
+            this.button19.Text = "^";
+            this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.btnWasClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -478,6 +495,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ToolTip toolTip2;
+        private System.Windows.Forms.Button button19;
     }
 }
 

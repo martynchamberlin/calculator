@@ -30,8 +30,9 @@ namespace WindowsFormsApplication1
             string output = "";
             bool is_int = false;
             bool is_operator = false;
-            try{
-                int num = Convert.ToInt16( btn.Text );
+            try
+            {
+                int num = Convert.ToInt16(btn.Text);
                 is_int = true;
                 output = btn.Text;
                 lastButtonWasA = "operand";
@@ -51,9 +52,9 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void updateDisplay( string update, Boolean replace = false )
+        private void updateDisplay(string update, Boolean replace = false)
         {
-            if ( display.Text == "0" || replace)
+            if (display.Text == "0" || replace)
             {
                 display.Text = update;
             }
@@ -61,7 +62,7 @@ namespace WindowsFormsApplication1
             {
                 display.Text += update;
             }
-            
+
         }
         private void addToScreenClicked(object sender, EventArgs e)
         {
@@ -77,25 +78,58 @@ namespace WindowsFormsApplication1
         private void calculateBtn(object sender, EventArgs e)
         {
             String input = display.Text;
-            try
+            // if they're doing an exponent then we only let them have two operands.
+            // any more than that, and they get an error message
+            if (input.Contains('^'))
             {
-                var something = new DataTable().Compute(input, null);
-                display.Text = Convert.ToString(something);
-            } 
-            catch(SyntaxErrorException error)
-            {
-                MessageBox.Show("An error occured! Please make sure that the input is valid");
+                int index = input.IndexOf('^');
+                try
+                {
+                    int num1 = Convert.ToInt32(input.Substring(0, index));
+                    int num2 = Convert.ToInt32(input.Substring(index + 1));
+                    display.Text = Convert.ToString(Math.Pow(num1, num2));
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("An error occured! Please make sure that the input is valid");
+                }
             }
-           
+            else
+            {
+                try
+                {
+                    var something = new DataTable().Compute(input, null);
+                    display.Text = Convert.ToString(something);
+                }
+                catch (EvaluateException error)
+                {
+                    MessageBox.Show("An error occured! Please make sure that the input is valid");
+                }
+            }
+
         }
 
 
         public void deleteWasClicked(object sender, EventArgs e)
         {
-            if (display.Text.Length > 0)
+            bool actually_deleted_something = false;
+            // in case there's white space happening, we need recursion here
+            while (display.Text.Length > 0)
             {
-               display.Text = display.Text.Substring(0, display.Text.Length - 1);
+                string nextChar = display.Text.Substring(display.Text.Length - 1);
+                if (nextChar != " ")
+                {
+                    if (actually_deleted_something)
+                    {
+                        break;
+                    }
+                    actually_deleted_something = true;
+                }
+                display.Text = display.Text.Substring(0, display.Text.Length - 1);
             }
+
+
+            // this must not be an else statement, because both might be true 
             if (display.Text.Length == 0)
             {
                 display.Text = "0";
