@@ -221,12 +221,49 @@ namespace WindowsFormsApplication1
 
             // Now that they're autopopulated, let's predefine what the default selected 
             // option is for each dropdown
-            DateTime current = new DateTime();
-            current = DateTime.Now;
+            DateTime current = DateTime.Now;
+            int year = current.Year;
+            int month = current.Month;
+            int day = current.Day;
             int hour = current.Hour;
-            //MessageBox.Show(""+hour);
+            int minute = current.Minute;
 
-            startHour.SelectedItem = "9";// Convert.ToString(hour);
+            // Frustrating that VS insists on 0-23 hours time. Must rememdy this with code...
+            String ampm = "A.M";
+            if ( hour >= 12 )
+            {
+                ampm = "P.M.";
+            }
+            hour = hour == 0 ? 12 : hour % 12;
+
+            startYear.SelectedItem = (year < 10 ? "0" : "") + Convert.ToString(year).Substring(2);
+            startMonth.SelectedItem = (month < 10 ? "0" : "") + Convert.ToString(month);
+            startDay.SelectedItem = (day < 10 ? "0" : "" ) + Convert.ToString(day);
+            startHour.SelectedItem = Convert.ToString(hour);
+            startMinute.SelectedItem = (minute < 10 ? "0" : "" ) + Convert.ToString(minute);
+            startTime.SelectedItem = ampm;
+
+            TimeSpan span = new TimeSpan( 0, 5, 0, 0);
+            DateTime future = DateTime.Now.Add(span);
+            year = future.Year;
+            month = future.Month;
+            day = future.Day;
+            hour = future.Hour;
+            minute = future.Minute;
+
+            ampm = "A.M";
+            if (hour >= 12)
+            {
+                ampm = "P.M.";
+            }
+            hour = hour == 0 ? 12 : hour % 12;
+
+            finishYear.SelectedItem = (year < 10 ? "0" : "") + Convert.ToString(year).Substring(2);
+            finishMonth.SelectedItem = (month < 10 ? "0" : "") + Convert.ToString(month);
+            finishDay.SelectedItem = (day < 10 ? "0" : "") + Convert.ToString(day);
+            finishHour.SelectedItem = Convert.ToString(hour);
+            finishMinute.SelectedItem = (minute < 10 ? "0" : "") + Convert.ToString(minute);
+            finishTime.SelectedItem = ampm;
         }
 
     }
