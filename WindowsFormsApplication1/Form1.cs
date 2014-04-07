@@ -74,8 +74,8 @@ namespace WindowsFormsApplication1
                 int index = input.IndexOf('^');
                 try
                 {
-                    int num1 = Convert.ToInt32(input.Substring(0, index));
-                    int num2 = Convert.ToInt32(input.Substring(index + 1));
+                    double num1 = Convert.ToDouble(input.Substring(0, index));
+                    double num2 = Convert.ToDouble(input.Substring(index + 1));
                     display.Text = Convert.ToString(Math.Pow(num1, num2));
                 }
                 catch (Exception error)
