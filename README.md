@@ -15,7 +15,7 @@ Of course, in real life (or even as in my academic assignment here) you would wa
 
 You'll notice this application is colorful. That's because the assignment was to be for 6th graders to use. I dislike how bland most C# applications are (particularly in academia) and so I welcomed this opportunity to build something colorful.
 
-![screenshot](https://raw.githubusercontent.com/martynchamberlin/calculator/master/screenshot.png | width=300)
+<img src="https://raw.githubusercontent.com/martynchamberlin/calculator/master/screenshot.png" width="300"/>
 
 ## What's up with those Mac OS X file names?
 
